@@ -1,0 +1,490 @@
+ 
+
+html{
+  user-select: none;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  /* background: linear-gradient(#eefff9 0%,#ffccc1 49%,#dcdbff 100%);
+  background: linear-gradient(135deg,#153677,#4e085f); */
+  /* background: linear-gradient(135deg,#4203a9,#90bafc); */
+  background-color: none;
+}
+/* ::selection{
+  background-color: yellow;
+  color: red;
+} */
+
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(144deg,#237acc, #5B42F3 50%,#AF40FF);
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #444;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav.show {
+display: block;
+}
+
+
+.underLine1{
+  position: relative;
+}
+.underLine1::after{
+  content: '';
+  height: 2px;
+  background-color:  rgb(32, 243, 145);
+  width: 0px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.underLine1:hover::after {
+  width: 100%;
+  
+}
+
+
+.underLine2{
+  position: relative;
+}
+.underLine2::after{
+  content: '';
+  height: 2px;
+  background-color:  rgb(32, 243, 145);
+  width: 0px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.underLine2:hover::after {
+  width: 100%;
+  
+}
+
+
+.underLine3{
+  position: relative;
+}
+.underLine3::after{
+  content: '';
+  height: 2px;
+  background-color:  rgb(32, 243, 145);
+  width: 0px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.underLine3:hover::after {
+  width: 100%;
+  
+}
+
+
+.underLine4{
+  position: relative;
+}
+.underLine4::after{
+  content: '';
+  height: 2px;
+  background-color:  rgb(32, 243, 145);
+  width: 0px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.underLine4:hover::after {
+  width: 100%;
+  
+}
+
+.underLine5{
+  position: relative;
+}
+.underLine5::after{
+  content: '';
+  height: 2px;
+  background-color:  rgb(32, 243, 145);
+  width: 0px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.underLine5:hover::after {
+  width: 100%;
+  
+}
+
+
+.underLine6{
+  position: relative;
+}
+.underLine6::after{
+  content: '';
+  height: 2px;
+  background-color:  rgb(32, 243, 145);
+  width: 0px;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  z-index: 0;
+  transition: 0.5s;
+}
+.underLine6:hover::after {
+  width: 100%;
+  
+}
+
+
+/* .man:focus::after {
+  width: 100%;
+  
+} */
+
+/* .Main:hover .man:hover{
+  width: 100%;
+  
+} */
+.man1::after{
+  width: 100%;
+}
+.man2::after{
+  width: 100%;
+  /* height: 150%; */
+}
+.man3::after{
+  width: 100%;
+  /* height: 150%; */
+}
+.man4::after{
+  width: 100%;
+}
+.man5::after{
+  width: 100%;
+  /* height: 150%; */
+}
+.man6::after{
+  width: 100%;
+  /* height: 150%; */
+}
+/* .man3::after{
+  width: 100%;
+}
+.man4::after{
+  width: 100%;
+}
+
+.man5::after{
+  width: 100%;
+}
+.man6::after{
+  width: 100%;
+}
+
+.man7::after{
+  width: 100%;
+} */
+
+.menu-button {
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  /* width: 100vw; */
+  /* background: linear-gradient(315deg, rgb(54, 11, 51) 3%, rgb(9, 50, 94) 38%, rgb(59, 151, 145) 68%, rgb(79, 163, 10) 98%); */
+  background: linear-gradient(315deg, red 50%,rgb(151, 134, 134),blue,green,Orange 108%);
+  animation: gradient 12s ease infinite;
+  color: rgb(14, 233, 98);
+  background-size: 400% 400%;
+  box-shadow: rgba(0, 0, 0, 0.95) 0 8px 15px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+}
+
+.SetTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgba(27, 25, 25, 0.79);
+  /* rgb(175, 145, 160); */
+  font-size: 60px;
+  position: relative;
+  bottom : 50px;
+}
+.FinalSerch::placeholder
+{
+  text-align: right;
+}
+
+
+.Main{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+input{
+  height: 27px;
+  width: 250px;
+  border-style:ridge;
+  border-color: red;
+  border-radius: 3.5%;
+  background:linear-gradient(to right ,#fc4,#6dd5ed);
+  text-align: center;
+  font-size: large;
+  opacity: 50%;
+}
+
+
+button{
+  appearance: none;
+  /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+  border: none;
+  border-radius: 15px;
+  /* box-sizing: border-box; */
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  width: 150px;
+  line-height: normal;
+  margin: 10px;
+  /* min-height: 60px; */
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.25, 1, 0.32, 5);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 8vh;
+  will-change: transform;
+  border: 0.25px solid rgba(0, 0, 0, 0.918);
+
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,0.3) 98%);
+  animation: gradient 10s linear infinite;
+  background-size: 400% 400%;
+
+  
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  font-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
+  transform: translateY(-2px);
+  border: 1.5px solid rgb(216, 190, 190);
+
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.IncomingDiv,.OutgoingDiv{
+  backdrop-filter: blur(1000px);
+  border: rgb(153, 131, 70);
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
+  border: 1px solid rgb(216, 190, 190);
+}
+.IncomingBackButton,.OutgoingBackButton{
+  height: 25px;
+  padding-top: -10px;
+  padding-bottom: -10px;
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  font-size: larger;
+}
+
+.IncomingSubmitButton{
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  width: 80px;
+  height: 40px;
+  font-size: larger;
+}
+.InputBox1.InputBox2{
+  position: absolute;
+}
+.DisplayError1,.DisplayError2{
+  position: absolute;
+  bottom: 160px;
+}
+table{
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+.tableRow
+{
+  font-weight: bolder;
+  
+}
+td{
+  padding: 10px;
+}
+
+
+
+
+
+
+/* WaveCss */
+
+
+body {
+  margin: auto;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,0.3) 98%);
+  animation: gradient 10s linear infinite;
+  border-radius: 2000% 2000% 0;
+  position: fixed;
+  width: 200%;
+  height: 4em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+
+
+
+/* WaveCss */
+
+
