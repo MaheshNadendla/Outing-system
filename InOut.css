@@ -1,4 +1,7 @@
- 
+
+
+
+
 
 html{
   user-select: none;
@@ -16,18 +19,59 @@ html{
   color: red;
 } */
 
+body {
+  margin: auto;
+ 
+  overflow: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%); */
+  /* animation: gradient 15s ease infinite;
+  background-size: 400% 400%; */
+  background-attachment: fixed;
+  background: linear-gradient(#141e30, #243b55);
+}
 
 
-nav {
+
+header{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(144deg,#237acc, #5B42F3 50%,#AF40FF);
-  padding: 10px;
+  height: 100px;
+  width: auto;
+
+  background: linear-gradient(#141e30, #243b55);
+  
+  color: rgb(14, 233, 98);
+  
+  box-shadow: rgba(0, 0, 0, 0.95) 0 8px 15px;
+ 
+  /* animation: gradient 12s ease infinite; */
+  /* background-size: 400% 400%; */
+  border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px ;
+
+}
+
+
+
+
+nav {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.318);
   text-align: center;
+  border-radius: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.141) ;
   box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 70px;
+  width: auto;
+  box-shadow: 0px 2px 5px rgba(, 0, 0.1);   /*0, 0 */
 }
 
 nav a {
@@ -35,37 +79,20 @@ nav a {
   text-decoration: none;
   margin: 0 20px;
   font-size: 22px;
+  display: block;
+  padding: 10px 0;
+}
+ a :hover{
+  color: red;
+
+  
 }
 
-@media only screen and (max-width: 600px) {
-  .menu-button {
-    display: block;
-  }
 
-  nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background-color: #444;
-    text-align: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
 
-  nav a {
-    display: block;
-    padding: 10px 0;
-  }
+  
 
-  nav.show {
-    display: flex;
-    flex-direction: column;
-  }
-}
-nav.show {
-display: block;
-}
+
 
 
 .underLine1{
@@ -77,7 +104,7 @@ display: block;
   background-color:  rgb(32, 243, 145);
   width: 0px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0px;
   z-index: 0;
   transition: 0.5s;
@@ -97,7 +124,7 @@ display: block;
   background-color:  rgb(32, 243, 145);
   width: 0px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0px;
   z-index: 0;
   transition: 0.5s;
@@ -117,7 +144,7 @@ display: block;
   background-color:  rgb(32, 243, 145);
   width: 0px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0px;
   z-index: 0;
   transition: 0.5s;
@@ -137,7 +164,7 @@ display: block;
   background-color:  rgb(32, 243, 145);
   width: 0px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0px;
   z-index: 0;
   transition: 0.5s;
@@ -156,7 +183,7 @@ display: block;
   background-color:  rgb(32, 243, 145);
   width: 0px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0px;
   z-index: 0;
   transition: 0.5s;
@@ -168,6 +195,7 @@ display: block;
 
 
 .underLine6{
+  
   position: relative;
 }
 .underLine6::after{
@@ -176,10 +204,12 @@ display: block;
   background-color:  rgb(32, 243, 145);
   width: 0px;
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0px;
   z-index: 0;
   transition: 0.5s;
+
+  
 }
 .underLine6:hover::after {
   width: 100%;
@@ -242,37 +272,17 @@ display: block;
   color: #fff;
 }
 
-header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  width: 100vw;
-  /* width: 100vw; */
-  /* background: linear-gradient(315deg, rgb(54, 11, 51) 3%, rgb(9, 50, 94) 38%, rgb(59, 151, 145) 68%, rgb(79, 163, 10) 98%); */
-  background: linear-gradient(315deg, red 50%,rgb(151, 134, 134),blue,green,Orange 108%);
-  animation: gradient 12s ease infinite;
-  color: rgb(14, 233, 98);
-  background-size: 400% 400%;
-  box-shadow: rgba(0, 0, 0, 0.95) 0 8px 15px;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-top: -8px;
-}
+
 
 .SetTitle{
   display: flex;
   justify-content: center;
   align-items: center;
-  color:rgba(27, 25, 25, 0.79);
+  color:rgba(214, 181, 181, 0.79);
   /* rgb(175, 145, 160); */
   font-size: 60px;
   position: relative;
   bottom : 50px;
-}
-.FinalSerch::placeholder
-{
-  text-align: right;
 }
 
 
@@ -295,58 +305,105 @@ input{
 
 
 button{
-  appearance: none;
-  /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
-  border: none;
-  border-radius: 15px;
-  /* box-sizing: border-box; */
-  color: #FFFFFF;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+  padding : 12px 26px;
+  color: #fff;
+  border: 0;
+  font-weight: bold;
   font-size: 16px;
-  font-weight: 600;
+  transition: all 150ms ease-in-out;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border-radius: 10px;
+  background-color: #111111;
+  background-image: radial-gradient(76% 151% at 52% 5%, rgba(255, 255, 255, 0.23) 0%, transparent 100%);
+  cursor:pointer;
+  height: 50px;
   width: 150px;
-  line-height: normal;
-  margin: 10px;
-  /* min-height: 60px; */
-  outline: none;
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(0.25, 1, 0.32, 5);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  height: 8vh;
-  will-change: transform;
-  border: 0.25px solid rgba(0, 0, 0, 0.918);
+  margin: 20px;
 
-  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,0.3) 98%);
-  animation: gradient 10s linear infinite;
-  background-size: 400% 400%;
 
-  
 }
 
-button:disabled {
-  pointer-events: none;
-}
 
 button:hover {
   font-size: 100%;
-  box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
-  transform: translateY(-2px);
-  border: 1.5px solid rgb(216, 190, 190);
+  box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
+  transform: translateY(1px);
+  
 
-}
+} 
 
-button:active {
+ button:active {
   box-shadow: none;
   transform: translateY(0);
 }
+
+.Timer{
+  text-align: right;
+  margin-right: 28px;
+  color: #6dd5ed;
+}
+
+.JntuLogo{
+  opacity: 0.2;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  top:-20px;
+}
+
+.Reverse{
+  height: 40px;
+  width: 40px;
+  position: relative;
+
+
+}
+#ReverseBtn
+{
+
+  border: px solid black;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+ 
+
+
+}
+
+#ReverseBtn2{
+  position: relative;
+  top:60px;
+  left: 10px;
+  cursor: pointer;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .IncomingDiv,.OutgoingDiv{
   backdrop-filter: blur(1000px);
@@ -360,7 +417,8 @@ button:active {
   border-radius: 50px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.55) 0 8px 15px;
-  border: 1px solid rgb(216, 190, 190);
+  border: 1px solid rgb(216, 190, 190,0.37);
+  
 }
 .IncomingBackButton,.OutgoingBackButton{
   height: 25px;
@@ -368,27 +426,42 @@ button:active {
   padding-bottom: -10px;
   width: 70px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 17px;
+  left: 13px;
   height: 20px;
   font-size: larger;
+  
 }
 
 .IncomingSubmitButton{
   position: absolute;
   bottom: 10px;
   right:10px;
-  width: 80px;
+  width: 110px;
   height: 40px;
   font-size: larger;
+  
 }
+
 .InputBox1.InputBox2{
   position: absolute;
 }
-.DisplayError1,.DisplayError2{
+.InputBox4{
+  margin-top: 3px;
+
+}
+.DisplayError1{
   position: absolute;
   bottom: 160px;
 }
+.DisplayError2{
+  position: relative;
+  top: 6px;
+
+}
+
+
+
 table{
   text-align: center;
   background-color: #FFFFFF;
@@ -403,6 +476,41 @@ td{
   padding: 10px;
 }
 
+.ResetMessage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color :rgba(141, 221, 11, 0.486); 
+  font-size: x-large;
+  height: 300px;
+  width: 300px;
+  border-radius: 40px;
+
+  
+
+}
+.ResetMessageDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background-color: transparent;
+  
+  box-shadow:rgba(0, 0, 0, 0.65) 0 8px 15px;
+  
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.37);
+
+
+}
+label{
+  margin-top: 15px;
+  margin-bottom: -8px;
+  color: rgb(178, 238, 164);
+  font-size: x-large;
+}
+
 
 
 
@@ -411,17 +519,9 @@ td{
 /* WaveCss */
 
 
-body {
-  margin: auto;
-  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
-  overflow: auto;
-  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
-}
 
-@keyframes gradient {
+
+/* @keyframes gradient {
   0% {
       background-position: 0% 0%;
   }
@@ -431,60 +531,209 @@ body {
   100% {
       background-position: 0% 0%;
   }
+} */
+
+
+
+#SearchIcon{
+  /* border: 1px solid wheat; */
+  background:linear-gradient(to right ,#fc4,#6dd5ed);
+
+  padding: 1.5px;
+  border: 1px solid;
+  border-color: red;
+  border-radius: 0%;
+  width: 31px;
+  height: 31px;
+  position: relative;
+  left:-25.5px;
+  top:1.2px;
+  
+  
 }
 
-.wave {
-  background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,0.3) 98%);
-  animation: gradient 10s linear infinite;
-  border-radius: 2000% 2000% 0;
-  position: fixed;
-  width: 200%;
-  height: 4em;
-  animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
+#SearchIcon :hover{
 
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
+  background:linear-gradient(to right ,rgb(0, 0, 0),#0d171a);
+  border: 2px solid;
+  border-color: red;
+  background-color: #FFFFFF;
+  animation: none;
 
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 20s -1s reverse infinite;
-  opacity: 0.9;
-}
-
-@keyframes wave {
-  2% {
-      transform: translateX(1);
-  }
-
-  25% {
-      transform: translateX(-25%);
-  }
-
-  50% {
-      transform: translateX(-50%);
-  }
-
-  75% {
-      transform: translateX(-25%);
-  }
-
-  100% {
-      transform: translateX(1);
-  }
 }
 
 
 
 
 /* WaveCss */
+
+
+:root
+{
+  /* --bil:red; */
+
+
+}
+
+
+
+@media only screen and (max-width:480px){
+
+  body{
+    /* background: var(--bil); */
+  }
+
+  nav{
+    display: grid;
+    grid-template-columns:repeat(3,2fr) ;
+
+  }
+  nav a{
+    font-size: small;
+    
+  }
+
+
+  #SearchIcon{
+    display: none;
+
+
+  }
+
+  .FinalSerch{
+    display: none;
+
+  }
+
+  
+  .JntuLogo{
+
+    height: 400px;
+    width: 400px;
+
+  }
+  
+
+  .underLine6:hover::after {
+    width: 40%;
+  }
+  .underLine6::after
+  {
+    left: 33px;
+    margin-top: -10px;
+  }
+
+  .man6::after{
+    width: 40%;
+  }
+
+
+
+  .underLine5:hover::after {
+    width: 30%;
+  }
+  .underLine5::after
+  {
+    left: 39px;
+    margin-top: -10px;
+  }
+
+  .man5::after{
+    width: 30%;
+  }
+
+
+
+
+  .underLine4:hover::after {
+    width: 60%;
+  }
+  .underLine4::after
+  {
+    left: 22px;
+    margin-top: -10px;
+  }
+
+  .man4::after{
+    width: 60%;
+  }
+
+
+
+  .underLine3:hover::after {
+    width: 62%;
+  }
+  .underLine3::after
+  {
+    left: 21px;
+    margin-top: -10px;
+  }
+
+  .man3::after{
+    width: 62%;
+  }
+
+
+  .underLine2:hover::after {
+    width: 62%;
+  }
+  .underLine2::after
+  {
+    left: 21px;
+    margin-top: -10px;
+  }
+
+  .man2::after{
+    width: 40%;
+  }
+
+
+
+  .underLine1:hover::after {
+    width: 62%;
+  }
+  .underLine1::after
+  {
+    left: 21px;
+    margin-top: -10px;
+  }
+
+  .man1::after{
+    width: 62%;
+  }
+
+  .Main{
+
+    position: relative;
+    top:30px;
+
+  }
+
+  .SetTitle{
+    position: relative;
+
+    top:5px;
+
+    font-size: xx-large;
+
+  }
+
+
+
+  
+
+
+  button{
+    scale:0.8;
+
+  }
+
+
+  
+
+  
+}
+
+
 
 
