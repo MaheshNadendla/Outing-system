@@ -340,9 +340,12 @@ button:hover {
 
 .Timer{
   text-align: right;
-  margin-right: 28px;
   color: #6dd5ed;
+  display: inline-block;
+  position: relative;
+  left:28px;
 }
+
 
 .JntuLogo{
   opacity: 0.2;
@@ -370,6 +373,19 @@ button:hover {
 
 
 }
+
+#ReverseBtn3
+{
+
+  border: px solid black;
+  background-color: transparent;
+  background-image: none;
+  cursor: pointer;
+ 
+
+
+}
+
 
 #ReverseBtn2{
   position: relative;
@@ -579,7 +595,31 @@ label{
 
 @media only screen and (max-width:480px){
 
+  table{
+    margin-top: -10px;
+
+    scale: 0.7;
+
+  }
+
+  #Label1{
+    
+    display: block;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #ReverseBtn3 {
+    position: relative;
+    left: 100px;
+    bottom: -50px;
+}
+
+
   body{
+    height: auto;
+    width: 480px;
     /* background: var(--bil); */
   }
 
@@ -641,9 +681,6 @@ label{
   .man5::after{
     width: 30%;
   }
-
-
-
 
   .underLine4:hover::after {
     width: 60%;
@@ -718,10 +755,183 @@ label{
 
   }
 
+  button{
+    scale:0.8;
 
+  }
+
+
+  html{
+  
+    height:110dvh;
+  }
+  
+}
+
+
+
+
+@media only screen and (max-width:360px){
+
+  table{
+    margin-top: -10px;
+
+    scale: 0.7;
+
+  }
+
+  #Label1{
+    
+    display: block;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #ReverseBtn3 {
+    position: relative;
+    left: 100px;
+    bottom: -50px;
+}
+
+
+  body{
+    height: auto;
+    width: 480px;
+    /* background: var(--bil); */
+  }
+
+  nav{
+    display: grid;
+    grid-template-columns:repeat(3,2fr) ;
+
+  }
+  nav a{
+    font-size: small;
+    
+  }
+
+
+  #SearchIcon{
+    display: none;
+
+
+  }
+
+  .FinalSerch{
+    display: none;
+
+  }
 
   
+  .JntuLogo{
 
+    height: 400px;
+    width: 400px;
+
+  }
+  
+
+  .underLine6:hover::after {
+    width: 40%;
+  }
+  .underLine6::after
+  {
+    left: 33px;
+    margin-top: -10px;
+  }
+
+  .man6::after{
+    width: 40%;
+  }
+
+
+
+  .underLine5:hover::after {
+    width: 30%;
+  }
+  .underLine5::after
+  {
+    left: 39px;
+    margin-top: -10px;
+  }
+
+  .man5::after{
+    width: 30%;
+  }
+
+  .underLine4:hover::after {
+    width: 60%;
+  }
+  .underLine4::after
+  {
+    left: 22px;
+    margin-top: -10px;
+  }
+
+  .man4::after{
+    width: 60%;
+  }
+
+
+
+  .underLine3:hover::after {
+    width: 62%;
+  }
+  .underLine3::after
+  {
+    left: 21px;
+    margin-top: -10px;
+  }
+
+  .man3::after{
+    width: 62%;
+  }
+
+
+  .underLine2:hover::after {
+    width: 62%;
+  }
+  .underLine2::after
+  {
+    left: 21px;
+    margin-top: -10px;
+  }
+
+  .man2::after{
+    width: 40%;
+  }
+
+
+
+  .underLine1:hover::after {
+    width: 62%;
+  }
+  .underLine1::after
+  {
+    left: 21px;
+    margin-top: -10px;
+  }
+
+  .man1::after{
+    width: 62%;
+  }
+
+  .Main{
+
+    position: relative;
+    top:30px;
+
+  }
+
+  .SetTitle{
+    position: relative;
+
+    top:5px;
+
+    font-size: xx-large;
+
+  }
 
   button{
     scale:0.8;
@@ -729,11 +939,15 @@ label{
   }
 
 
+  html{
   
+    height:135dvh;
+  }
+  .Main button{
+
+    margin: 15px;
+
+  }
 
   
 }
-
-
-
-
