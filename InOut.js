@@ -31,7 +31,7 @@ function clearLinkedList(linkedList) {
 function Exit()
 {
 
-  document.querySelector(".Main").innerHTML = `<div class="Main"><img  class="JntuLogo"src="jntuhces_logo-removebg-preview.png" alt=""></div></div>`;
+  document.querySelector(".Main").innerHTML = `<div class="Main"><img  class="JntuLogo"src="images/jntuhces_logo-removebg-preview.png" alt=""></div></div>`;
   Countgoing = 0;
   CountComing = 0;
 }
@@ -102,7 +102,7 @@ function ResetApp()
 
 
   let display = document.querySelector(".Main");
-  display.innerHTML = `<span id="ReverseBtn2" onclick=Exit()><img class="Reverse" src="BackBtn-removebg-preview.png" alt=""></span>  <div class="ResetMessageDiv"><span class="ResetMessage">Reseted sucessfully </span> </div>`;
+  display.innerHTML = `<span id="ReverseBtn2" onclick=Exit()><img class="Reverse" src="images/BackBtn-removebg-preview.png" alt=""></span>  <div class="ResetMessageDiv"><span class="ResetMessage">Reseted sucessfully </span> </div>`;
 
 }
 
@@ -111,7 +111,7 @@ function SearchStudent(Location)
 {
 
   let display = document.querySelector(".Main");
-  display.innerHTML = `<span id="ReverseBtn2" onclick=Exit()><img class="Reverse" src="BackBtn-removebg-preview.png" alt=""></span>  <div class="ResetMessageDiv"><span class="ResetMessage">${Location}</span> </div>`;
+  display.innerHTML = `<span id="ReverseBtn2" onclick=Exit()><img class="Reverse" src="images/BackBtn-removebg-preview.png" alt=""></span>  <div class="ResetMessageDiv"><span class="ResetMessage">${Location}</span> </div>`;
 }
 
 
@@ -385,7 +385,7 @@ function DateTime() {
   let seconds = currentDateTime.getSeconds();
 
   
-  const formattedDateTime = "Time :  "+ date + " " + hours + ":" + minutes + ":" + seconds;
+  const formattedDateTime =  date + " " + hours + ":" + minutes + ":" + seconds;
   return formattedDateTime;
 }
 
@@ -848,7 +848,7 @@ else
 function StudentsPrintList(printingList) {
   let currentStudent = printingList.head;
   let x = "<table border="+"2"+">"+"<label id="+"Label1"+">"+" Student List: "+" </label>"+"<br>" + 
-  "<tr class="+"tableRow"+">"+"<td>"+"Name:  "+ "</td>"+"<td>"+"Id: "+"</td>"+"<td>"+"OutTime: "+"</td>"+"<td>"+"InTime: "+"</td>"+"<td>"+"Status: "+"</td>"+"<td>"+"Phone: "+"</td>"+"<td>"+"place: "+"</td>"+"</tr>";
+  "<tr class="+"tableRow"+">"+"<td>"+"Name:  "+ "</td>"+"<td>"+"Id: "+"</td>"+"<td>"+"OutTime: "+"</td>"+"<td>"+"In Time: "+"</td>"+"<td>"+"Status: "+"</td>"+"<td>"+"Phone: "+"</td>"+"<td>"+"place: "+"</td>"+"</tr>";
 
   while (currentStudent) {
     x += "<tr>"+"<td>" + currentStudent.name + "</td>";
@@ -867,7 +867,7 @@ function StudentsPrintList(printingList) {
   }
 
   let display = document.querySelector(".Main");
-  display.innerHTML = `<span id = "ReverseBtn" onclick=BackButton()> <img class="Reverse" src="BackBtn-removebg-preview.png" alt=""> </span> ${x}</table>`;
+  display.innerHTML = `<span id = "ReverseBtn3" onclick=BackButton()> <img class="Reverse" src="images/BackBtn-removebg-preview.png" alt=""> </span> ${x}</table>`;
 }
 
 
@@ -974,10 +974,10 @@ function OutGoing() {
   if (Countgoing % 2 === 1) {
     document.querySelector(".Main").innerHTML = `<div class="OutgoingDiv"><span 
     id="ReverseBtn"
-    class="OutgoingBackButton" onclick=BackButton()>  <img class="Reverse" src="BackBtn-removebg-preview.png" alt=""> </span><input class="InputBox2" placeholder="Enter Roll No"/> </span><input class="InputBox4" placeholder="Enter Place"/> <span class="DisplayError2"></span> <Button class="IncomingSubmitButton"  onclick="Submit2()">Submit</Button> </div>`;
+    class="OutgoingBackButton" onclick=BackButton()>  <img class="Reverse" src="images/BackBtn-removebg-preview.png" alt=""> </span><input class="InputBox2" placeholder="Enter Roll No"/> </span><input class="InputBox4" placeholder="Enter Place"/> <span class="DisplayError2"></span> <Button class="IncomingSubmitButton"  onclick="Submit2()">Submit</Button> </div>`;
   } else {
     Countgoing = 0;
-    document.querySelector(".Main").innerHTML = `<button onclick=BackButton()>  <img class="Reverse" src="BackBtn-removebg-preview.png" alt="">  </Button>`;
+    document.querySelector(".Main").innerHTML = `<button onclick=BackButton()>  <img class="Reverse" src="images/BackBtn-removebg-preview.png" alt="">  </Button>`;
   }
   console.log(Countgoing);
 }
@@ -988,10 +988,10 @@ function InComing() {
   if (CountComing % 2 === 1) {
     document.querySelector(".Main").innerHTML = `<div class="IncomingDiv"><span 
     id="ReverseBtn"
-    class="IncomingBackButton" onclick=BackButton()>   <img class="Reverse" src="BackBtn-removebg-preview.png" alt="">  </span><input class="InputBox1" placeholder="Enter Roll No"/> <span class="DisplayError1"></span> <Button class="IncomingSubmitButton" onclick=Submit1()>Submit</Button> </div>`;
+    class="IncomingBackButton" onclick=BackButton()>   <img class="Reverse" src="images/BackBtn-removebg-preview.png" alt="">  </span><input class="InputBox1" placeholder="Enter Roll No"/> <span class="DisplayError1"></span> <Button class="IncomingSubmitButton" onclick=Submit1()>Submit</Button> </div>`;
   } else {
     CountComing = 0;
-    document.querySelector(".Main").innerHTML = `<button onclick=BackButton()> <img class="Reverse" src="BackBtn-removebg-preview.png" alt=""> </Button>`;
+    document.querySelector(".Main").innerHTML = `<button onclick=BackButton()> <img class="Reverse" src="images/BackBtn-removebg-preview.png" alt=""> </Button>`;
   }
   console.log(CountComing);
 }
